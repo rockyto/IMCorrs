@@ -19,6 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+      //  let  userFolio = NSUserDefaults.standard
+        let userFolio =  UserDefaults.standard.string(forKey: "folio")
+        if (userFolio != nil){
+       let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+      //  let mainPage = mainStoryboard.instantiateViewController(withIdentifier: "perfildelParticipante") as! perfildelParticipante
+            
+            let Perfil = (mainStoryboard.instantiateViewController(withIdentifier: "tabsRoot") as? UITabBarController)
+            let appDelegate = UIApplication.shared.delegate
+            
+            appDelegate?.window??.rootViewController = Perfil
+            
+         //   let maingPageNav = UINavigationController(rootViewController: <#T##UIViewController#>)
+        }
+        
         return true
     }
 
