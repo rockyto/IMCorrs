@@ -20,6 +20,7 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         spinner.frame = CGRect(x: -20.0, y:6.0, width:20.0, height:20.0)
         spinner.startAnimating()
         spinner.alpha = 0.0
@@ -50,6 +51,8 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
         
         // Do any additional setup after loading the view.
     }
+    
+  
     
     func itemsDownloaded(items: NSArray) {
         feedItems = items

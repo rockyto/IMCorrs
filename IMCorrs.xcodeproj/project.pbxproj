@@ -31,6 +31,9 @@
 		AEAFAB7C2140774B00CDD49B /* touchID.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEAFAB7B2140774B00CDD49B /* touchID.mp3 */; };
 		AEB2FF602141B4AF00FCA959 /* PreguntasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */; };
 		AEC742FA2131DDF80058A11E /* logo_imcorrs.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC742F92131DDF80058A11E /* logo_imcorrs.png */; };
+		AED635682152FC6200E8D50D /* nace_central.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635662152FC6100E8D50D /* nace_central.png */; };
+		AED635692152FC6200E8D50D /* logo_nace_internacional.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635672152FC6100E8D50D /* logo_nace_internacional.png */; };
+		AED6356B2152FCD900E8D50D /* logo_penspen.png in Resources */ = {isa = PBXBuildFile; fileRef = AED6356A2152FCD900E8D50D /* logo_penspen.png */; };
 		F92D7B602137AFA900012A23 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D7B5F2137AFA900012A23 /* SignInViewController.swift */; };
 		F92FEA4E213F9A8500FC39CC /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */; };
 		F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */; };
@@ -90,6 +93,9 @@
 		AEAFAB7B2140774B00CDD49B /* touchID.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = touchID.mp3; sourceTree = "<group>"; };
 		AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreguntasViewController.swift; sourceTree = "<group>"; };
 		AEC742F92131DDF80058A11E /* logo_imcorrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_imcorrs.png; sourceTree = "<group>"; };
+		AED635662152FC6100E8D50D /* nace_central.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nace_central.png; sourceTree = "<group>"; };
+		AED635672152FC6100E8D50D /* logo_nace_internacional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_nace_internacional.png; sourceTree = "<group>"; };
+		AED6356A2152FCD900E8D50D /* logo_penspen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_penspen.png; sourceTree = "<group>"; };
 		BCD0A5C5B182D54C2644CB46 /* Pods_IMCorrsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D7B5F2137AFA900012A23 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +241,9 @@
 		AEC742F82131DDE50058A11E /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				AED635672152FC6100E8D50D /* logo_nace_internacional.png */,
+				AED6356A2152FCD900E8D50D /* logo_penspen.png */,
+				AED635662152FC6100E8D50D /* nace_central.png */,
 				AE72C21521373BCB005AD065 /* iconos */,
 				AEC742F92131DDF80058A11E /* logo_imcorrs.png */,
 			);
@@ -357,7 +366,10 @@
 				F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */,
 				AE72C21921373BFE005AD065 /* icon_conferencia_ma@3x.png in Resources */,
 				AE72C22121373D0F005AD065 /* icon_conferencia_m@3x.png in Resources */,
+				AED635682152FC6200E8D50D /* nace_central.png in Resources */,
+				AED6356B2152FCD900E8D50D /* logo_penspen.png in Resources */,
 				AE72C21B21373C0D005AD065 /* icon_mis_datos_ma@3x.png in Resources */,
+				AED635692152FC6200E8D50D /* logo_nace_internacional.png in Resources */,
 				AE72C22021373D0F005AD065 /* icon_mis_datos_m@3x.png in Resources */,
 				AE72C21721373BE6005AD065 /* icon_programa_ma@3x.png in Resources */,
 				AEAFAB7C2140774B00CDD49B /* touchID.mp3 in Resources */,

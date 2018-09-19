@@ -24,6 +24,9 @@ class PreguntasViewController: UIViewController {
     let participanteNombre = UserDefaults.standard.string(forKey: "nombre")
     
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         
         self.autorPregunta = participanteNombre!
         print(autorPregunta)
@@ -45,6 +48,17 @@ class PreguntasViewController: UIViewController {
         
     }
     
+    
+    @objc func teclado(notificacion: Notification){
+        guard let tecladoUp = (notificacion.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{
+            return
+        }
+        if notificacion.name == Notification.Name.UIKeyboardWillShow{
+            self.view.frame.origin.y = -100
+        }else{
+            self.view.frame.origin.y = 0
+        }
+    }
     
     
     @IBAction func enviarPregunta(_ sender: UIBarButtonItem){
@@ -76,5 +90,13 @@ class PreguntasViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        print("ejecutar accion")
+        return true
+    }
 
 }
