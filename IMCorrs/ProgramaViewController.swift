@@ -52,6 +52,18 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
+        
+        let programaModelo = ProgramaModelo()
+        programaModelo.delegate = self
+        programaModelo.downloadItems()
+        
+    }
+    
   
     
     func itemsDownloaded(items: NSArray) {
