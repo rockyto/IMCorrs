@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6F199AD5E3B38D19CD09D329 /* Pods_IMCorrs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D7ED50329F61525FCEE91D /* Pods_IMCorrs.framework */; };
+		AE0A08222151ADFA007D22DF /* ProgramaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08212151ADFA007D22DF /* ProgramaModelo.swift */; };
+		AE0A08262151AE4E007D22DF /* ProgramaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */; };
+		AE0A08342151B0DB007D22DF /* ProgramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */; };
+		AE0A08362151B490007D22DF /* DetallesPrograma.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08352151B490007D22DF /* DetallesPrograma.swift */; };
 		AE44CA812131BFE10062BD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44CA802131BFE10062BD7A /* AppDelegate.swift */; };
 		AE44CA862131BFE10062BD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE44CA842131BFE10062BD7A /* Main.storyboard */; };
 		AE44CA882131C0130062BD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44CA872131C0130062BD7A /* Assets.xcassets */; };
@@ -28,8 +32,9 @@
 		AEB2FF602141B4AF00FCA959 /* PreguntasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */; };
 		AEC742FA2131DDF80058A11E /* logo_imcorrs.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC742F92131DDF80058A11E /* logo_imcorrs.png */; };
 		F92D7B602137AFA900012A23 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D7B5F2137AFA900012A23 /* SignInViewController.swift */; };
-		F92FEA4C213F990F00FC39CC /* icons8-screenshot-filled-50 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = F92FEA4B213F990E00FC39CC /* icons8-screenshot-filled-50 (1).png */; };
 		F92FEA4E213F9A8500FC39CC /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */; };
+		F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */; };
+		F949DD1321521BBF000BB515 /* icons8-repeat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F949DD1221521BBE000BB515 /* icons8-repeat-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,10 @@
 		51E4C51C28DCAADF92D22FD9 /* Pods-IMCorrs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMCorrs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMCorrs/Pods-IMCorrs.debug.xcconfig"; sourceTree = "<group>"; };
 		56D7ED50329F61525FCEE91D /* Pods_IMCorrs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E7FA95DE1F7DBEEAF287BC /* Pods_IMCorrsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0A08212151ADFA007D22DF /* ProgramaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaModelo.swift; sourceTree = "<group>"; };
+		AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaTableViewCell.swift; sourceTree = "<group>"; };
+		AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaViewController.swift; sourceTree = "<group>"; };
+		AE0A08352151B490007D22DF /* DetallesPrograma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPrograma.swift; sourceTree = "<group>"; };
 		AE44CA7D2131BFE00062BD7A /* IMCorrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMCorrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44CA802131BFE10062BD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE44CA852131BFE10062BD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,8 +92,9 @@
 		AEC742F92131DDF80058A11E /* logo_imcorrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_imcorrs.png; sourceTree = "<group>"; };
 		BCD0A5C5B182D54C2644CB46 /* Pods_IMCorrsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D7B5F2137AFA900012A23 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		F92FEA4B213F990E00FC39CC /* icons8-screenshot-filled-50 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-screenshot-filled-50 (1).png"; sourceTree = "<group>"; };
 		F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-screenshot-filled-50.png"; sourceTree = "<group>"; };
+		F949DD1221521BBE000BB515 /* icons8-repeat-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-repeat-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +171,10 @@
 			children = (
 				AEAFAB7B2140774B00CDD49B /* touchID.mp3 */,
 				AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */,
+				AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */,
+				AE0A08352151B490007D22DF /* DetallesPrograma.swift */,
+				AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */,
+				AE0A08212151ADFA007D22DF /* ProgramaModelo.swift */,
 				AE44CA802131BFE10062BD7A /* AppDelegate.swift */,
 				AEAFAB762140643F00CDD49B /* enviarQRViewController.swift */,
 				F92D7B5F2137AFA900012A23 /* SignInViewController.swift */,
@@ -196,10 +210,11 @@
 		AE72C21521373BCB005AD065 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
-				F92FEA4B213F990E00FC39CC /* icons8-screenshot-filled-50 (1).png */,
 				AE72C21E21373D0B005AD065 /* icon_conferencia_m@3x.png */,
+				F949DD1221521BBE000BB515 /* icons8-repeat-50.png */,
 				AE72C21D21373D06005AD065 /* icon_mis_datos_m@3x.png */,
 				AE72C21C21373D03005AD065 /* icon_programa_m@3x.png */,
+				F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */,
 				AE72C21821373BF7005AD065 /* icon_conferencia_ma@3x.png */,
 				AE72C21A21373C01005AD065 /* icon_mis_datos_ma@3x.png */,
 				AE72C21621373BDF005AD065 /* icon_programa_ma@3x.png */,
@@ -339,13 +354,14 @@
 				AE44CAAF2131C2360062BD7A /* GoogleService-Info.plist in Resources */,
 				AE44CA882131C0130062BD7A /* Assets.xcassets in Resources */,
 				AE44CA862131BFE10062BD7A /* Main.storyboard in Resources */,
-				F92FEA4C213F990F00FC39CC /* icons8-screenshot-filled-50 (1).png in Resources */,
+				F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */,
 				AE72C21921373BFE005AD065 /* icon_conferencia_ma@3x.png in Resources */,
 				AE72C22121373D0F005AD065 /* icon_conferencia_m@3x.png in Resources */,
 				AE72C21B21373C0D005AD065 /* icon_mis_datos_ma@3x.png in Resources */,
 				AE72C22021373D0F005AD065 /* icon_mis_datos_m@3x.png in Resources */,
 				AE72C21721373BE6005AD065 /* icon_programa_ma@3x.png in Resources */,
 				AEAFAB7C2140774B00CDD49B /* touchID.mp3 in Resources */,
+				F949DD1321521BBF000BB515 /* icons8-repeat-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +433,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0A08222151ADFA007D22DF /* ProgramaModelo.swift in Sources */,
+				AE0A08342151B0DB007D22DF /* ProgramaViewController.swift in Sources */,
 				AE72C22621375419005AD065 /* MBProgressHUD.m in Sources */,
 				AEB2FF602141B4AF00FCA959 /* PreguntasViewController.swift in Sources */,
 				AE506D742138510900243EA1 /* perfildelParticipante.swift in Sources */,
 				AEAFAB772140643F00CDD49B /* enviarQRViewController.swift in Sources */,
+				AE0A08362151B490007D22DF /* DetallesPrograma.swift in Sources */,
 				AE44CA812131BFE10062BD7A /* AppDelegate.swift in Sources */,
 				F92D7B602137AFA900012A23 /* SignInViewController.swift in Sources */,
+				AE0A08262151AE4E007D22DF /* ProgramaTableViewCell.swift in Sources */,
 				F92FEA4E213F9A8500FC39CC /* ScanQRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,13 +620,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JU25EWQPKG;
+				DEVELOPMENT_TEAM = W48QF7TTU8;
 				INFOPLIST_FILE = IMCorrs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.imcorrs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.IMCorrs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Activity/IMCorrs-Bridging-Header.h";
@@ -624,13 +644,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JU25EWQPKG;
+				DEVELOPMENT_TEAM = W48QF7TTU8;
 				INFOPLIST_FILE = IMCorrs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.imcorrs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.IMCorrs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Activity/IMCorrs-Bridging-Header.h";

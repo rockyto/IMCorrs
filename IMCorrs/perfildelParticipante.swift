@@ -16,7 +16,7 @@ class perfildelParticipante: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var cargoParticipanteLabel: UILabel!
     @IBOutlet weak var imagenFolioParticipante: UIImageView!
     
-    let URLIMCorrs = "http://192.168.1.70:8888/imcorrs/admin/"
+   // let URLIMCorrs = "http://192.168.1.70:8888/imcorrs/admin/"
     
     override func viewDidLoad() {
         super.viewDidLoad()

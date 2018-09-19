@@ -14,14 +14,19 @@ import FirebaseStorage
 
 class PreguntasViewController: UIViewController {
     
+  
+    @IBOutlet weak var lblPregunta: UILabel!
     @IBOutlet weak var campoPregunta: UITextView!
     var ref: DatabaseReference!
     var idFirebase = "preguntas_val"
-    var stringFolio = "EST-00001" //String()
     var estatusPregunta = "0"
+    var autorPregunta = ""
+    let participanteNombre = UserDefaults.standard.string(forKey: "nombre")
     
     override func viewDidLoad() {
-    
+        
+        self.autorPregunta = participanteNombre!
+        print(autorPregunta)
         campoPregunta.layer.cornerRadius = campoPregunta.bounds.width / 50
        
         ref = Database.database().reference()
@@ -29,19 +34,32 @@ class PreguntasViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    //@IBOutlet weak var campoPregunta: UITextField!
+    @IBAction func switchAnonimo(_ sender: UISwitch) {
+        if(sender.isOn == true){
+            self.autorPregunta = "Áninimo"
+            print(autorPregunta)
+        }else{
+            self.autorPregunta = participanteNombre!
+            print(autorPregunta)
+        }
+        
+    }
     
     
     
     @IBAction func enviarPregunta(_ sender: UIBarButtonItem){
-         let id = ref.childByAutoId().key
-        //let id = ref.childByAutoId().key
-       // let storage = Storage.storage().reference()
+        let id = ref.childByAutoId().key
         let preguntas_val = ["estatus": estatusPregunta,
-                        "mensaje": campoPregunta.text!]
+                        "mensaje": campoPregunta.text,
+                        "nombre": autorPregunta as String] as [String : Any]
+
         ref.child(idFirebase).child(id).setValue(preguntas_val)
-        
+
         print("enviado")
+        self.lblPregunta.text = campoPregunta.text
+        self.campoPregunta.text = ""
+        print(autorPregunta)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

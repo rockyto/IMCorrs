@@ -11,17 +11,18 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var folioTextField: UITextField!
+    @IBOutlet weak var acceso: UIButton!
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     let status = UIImageView(image: UIImage(named: "banner"))
     let label = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NavBarImage()
         
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         
         spinner.frame = CGRect(x: -20.0, y:6.0, width:20.0, height:20.0)
         spinner.startAnimating()
@@ -31,25 +32,47 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(status)
         status.addSubview(label)
         
+        self.acceso.layer.cornerRadius = 5
+   
+    
+         // campoPregunta.layer.cornerRadius = campoPregunta.bounds.width / 50
         // Do any additional setup after loading the view, typically from a nib.
     }
-    @objc func teclado(notificacion: Notification){
-        
-        guard let tecladoUp = (notificacion.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-            return
-        }
-        
-        if notificacion.name == Notification.Name.UIKeyboardWillShow {
-            self.view.frame.origin.y = -100
-        }else{
-            self.view.frame.origin.y = 0
-        }
+    
+    func NavBarImage(){
+        let navController = navigationController
+        let image = #imageLiteral(resourceName: "logo_imcorrs.png")
+        let imageView = UIImageView(image: image)
+        let bannerWidth = navController?.navigationBar.frame.size.width
+        let bannerHeight = navController?.navigationBar.frame.size.height
+        let bannerX = bannerWidth! / 3 - image.size.width / 3
+        let bannerY = bannerHeight! / 3 - image.size.width / 3
+        imageView.frame = CGRect(x: bannerX, y:bannerY, width: bannerWidth!, height: bannerHeight!)
+        imageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = imageView
     }
+    
+    
+//    @objc func teclado(notificacion: Notification){
+//
+//        guard let tecladoUp = (notificacion.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+//            return
+//        }
+//
+//        if notificacion.name == Notification.Name.UIKeyboardWillShow {
+//            self.view.frame.origin.y = -100
+//        }else{
+//            self.view.frame.origin.y = 0
+//        }
+//    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func signInButtonTapped(sender: AnyObject){
+        
         let folioParticipante = folioTextField.text
         
         if (folioParticipante?.isEmpty)! {
@@ -102,18 +125,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
            UserDefaults.standard.set(parseJSON?["estatus"], forKey: "estatus")
            UserDefaults.standard.set(parseJSON?["folio"], forKey: "folio")
            UserDefaults.standard.synchronize()
-    
-
-
             
     let Perfil = (self.storyboard?.instantiateViewController(withIdentifier: "tabsRoot") as? UITabBarController)
             
-    //; self.navigationController?.pushViewController(Perfil!, animated: true)
-            
-    //as! perfildelParticipante
-    
-    //let mainPage = UINavigationController(rootViewController: Perfil!)
-    
     let appDelegate = UIApplication.shared.delegate
 
     appDelegate?.window??.rootViewController = Perfil
