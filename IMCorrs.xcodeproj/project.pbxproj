@@ -12,6 +12,7 @@
 		AE0A08262151AE4E007D22DF /* ProgramaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */; };
 		AE0A08342151B0DB007D22DF /* ProgramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */; };
 		AE0A08362151B490007D22DF /* DetallesPrograma.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A08352151B490007D22DF /* DetallesPrograma.swift */; };
+		AE3CD6DE21544F3C0045B007 /* icons8-notification-24.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3CD6DD21544F3C0045B007 /* icons8-notification-24.png */; };
 		AE44CA812131BFE10062BD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44CA802131BFE10062BD7A /* AppDelegate.swift */; };
 		AE44CA862131BFE10062BD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE44CA842131BFE10062BD7A /* Main.storyboard */; };
 		AE44CA882131C0130062BD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44CA872131C0130062BD7A /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaTableViewCell.swift; sourceTree = "<group>"; };
 		AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaViewController.swift; sourceTree = "<group>"; };
 		AE0A08352151B490007D22DF /* DetallesPrograma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPrograma.swift; sourceTree = "<group>"; };
+		AE3CD6DD21544F3C0045B007 /* icons8-notification-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-notification-24.png"; sourceTree = "<group>"; };
 		AE44CA7D2131BFE00062BD7A /* IMCorrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMCorrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44CA802131BFE10062BD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE44CA852131BFE10062BD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				AE72C21E21373D0B005AD065 /* icon_conferencia_m@3x.png */,
 				F949DD1221521BBE000BB515 /* icons8-repeat-50.png */,
 				AE72C21D21373D06005AD065 /* icon_mis_datos_m@3x.png */,
+				AE3CD6DD21544F3C0045B007 /* icons8-notification-24.png */,
 				AE72C21C21373D03005AD065 /* icon_programa_m@3x.png */,
 				F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */,
 				AE72C21821373BF7005AD065 /* icon_conferencia_ma@3x.png */,
@@ -365,6 +368,7 @@
 				AE44CA862131BFE10062BD7A /* Main.storyboard in Resources */,
 				F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */,
 				AE72C21921373BFE005AD065 /* icon_conferencia_ma@3x.png in Resources */,
+				AE3CD6DE21544F3C0045B007 /* icons8-notification-24.png in Resources */,
 				AE72C22121373D0F005AD065 /* icon_conferencia_m@3x.png in Resources */,
 				AED635682152FC6200E8D50D /* nace_central.png in Resources */,
 				AED6356B2152FCD900E8D50D /* logo_penspen.png in Resources */,
