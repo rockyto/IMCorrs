@@ -31,6 +31,7 @@
 		AEAFAB772140643F00CDD49B /* enviarQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB762140643F00CDD49B /* enviarQRViewController.swift */; };
 		AEAFAB7C2140774B00CDD49B /* touchID.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEAFAB7B2140774B00CDD49B /* touchID.mp3 */; };
 		AEB2FF602141B4AF00FCA959 /* PreguntasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */; };
+		AEB9096121556C180090F8E8 /* programaDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9096021556C180090F8E8 /* programaDetallesViewController.swift */; };
 		AEC742FA2131DDF80058A11E /* logo_imcorrs.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC742F92131DDF80058A11E /* logo_imcorrs.png */; };
 		AED635682152FC6200E8D50D /* nace_central.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635662152FC6100E8D50D /* nace_central.png */; };
 		AED635692152FC6200E8D50D /* logo_nace_internacional.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635672152FC6100E8D50D /* logo_nace_internacional.png */; };
@@ -95,6 +96,7 @@
 		AEAFAB762140643F00CDD49B /* enviarQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enviarQRViewController.swift; sourceTree = "<group>"; };
 		AEAFAB7B2140774B00CDD49B /* touchID.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = touchID.mp3; sourceTree = "<group>"; };
 		AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreguntasViewController.swift; sourceTree = "<group>"; };
+		AEB9096021556C180090F8E8 /* programaDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = programaDetallesViewController.swift; sourceTree = "<group>"; };
 		AEC742F92131DDF80058A11E /* logo_imcorrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_imcorrs.png; sourceTree = "<group>"; };
 		AED635662152FC6100E8D50D /* nace_central.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nace_central.png; sourceTree = "<group>"; };
 		AED635672152FC6100E8D50D /* logo_nace_internacional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_nace_internacional.png; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				AEB2FF5F2141B4AE00FCA959 /* PreguntasViewController.swift */,
 				AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */,
 				AE0A08352151B490007D22DF /* DetallesPrograma.swift */,
+				AEB9096021556C180090F8E8 /* programaDetallesViewController.swift */,
 				AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */,
 				F92AE38D2154871E00F55CEA /* ConferenciaViewController.swift */,
 				AE0A08212151ADFA007D22DF /* ProgramaModelo.swift */,
@@ -463,6 +466,7 @@
 				AE44CA812131BFE10062BD7A /* AppDelegate.swift in Sources */,
 				F92D7B602137AFA900012A23 /* SignInViewController.swift in Sources */,
 				AE0A08262151AE4E007D22DF /* ProgramaTableViewCell.swift in Sources */,
+				AEB9096121556C180090F8E8 /* programaDetallesViewController.swift in Sources */,
 				F92FEA4E213F9A8500FC39CC /* ScanQRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

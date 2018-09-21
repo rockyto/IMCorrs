@@ -82,6 +82,8 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
             cell.lblAutores!.text = item.autores
         }else{
             cell.selectionStyle = .none
+            
+            cell.isUserInteractionEnabled = false
             cell.lblHorario!.text = item.horario
             cell.lblDescripcion!.text = item.descripcion
             cell.lblAutores!.text = item.autores
@@ -89,6 +91,93 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+       // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProgramaTableViewCell
+        let detail:programaDetallesViewController = self.storyboard?.instantiateViewController(withIdentifier: "detallesPrograma") as! programaDetallesViewController
+        let item: DetallePrograma = feedItems[indexPath.row] as! DetallePrograma
+       
+        /*
+        detail.selectDescrp = item.descripcion!
+        detail.selectAutor = item.autores!
+        detail.selectHorario = item.horario!
+         
+         
+         detail.strregion = "Region :\(arrdata[indexPath.row].region)"
+         detail.strsubregion = "SubRegion :\(arrdata[indexPath.row].subregion)"
+         detail.stralpha3 = "Alpha3code :\(arrdata[indexPath.row].alpha3Code)"
+         detail.stralpha2 = "Alpha2code :\(arrdata[indexPath.row].alpha2Code)"
+         self.navigationController?.pushViewController(detail, animated: true)
+         
+         detail.lblHorarioSelect!.text = item.horario
+         detail.lblAutorSelect!.text = item.autores
+         detail.lblDescrpSelect!.text = item.descripcion
+         
+         
+         if (item.autores != nil){
+         cell.selectionStyle = .default
+         cell.lblHorario!.text = item.horario
+         cell.lblDescripcion!.text = item.descripcion
+         cell.lblAutores!.text = item.autores
+         }else{
+         cell.selectionStyle = .none
+         cell.lblHorario!.text = item.horario
+         cell.lblDescripcion!.text = item.descripcion
+         cell.lblAutores!.text = item.autores
+         }
+         
+         if (item.autores != nil){
+         cell.selectionStyle = .default
+         
+         detail.selectHorario = item.horario!
+         detail.selectDescrp = item.descripcion!
+         detail.selectAutor = item.autores!
+         self.navigationController?.pushViewController(detail, animated: true)
+         }else{
+         //detail.select(nil)
+         cell.selectionStyle = .none
+         cell.isUserInteractionEnabled = false
+         }
+         
+        */
+        
+      
+      
+            detail.selectHorario = item.horario!
+            detail.selectDescrp = item.descripcion!
+            detail.selectAutor = item.autores!
+            self.navigationController?.pushViewController(detail, animated: true)
+
+        
+      
+        
+        
+        
+    
+    }
+    
+    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Set selected location to var
+     
+        selectedLocation = feedItems[indexPath.row] as! LocationModel
+     
+        // Manually call segue to detail view controller
+        self.performSegue(withIdentifier: "detailSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Get reference to the destination view controller
+        let detailVC  = segue.destination as! DetailViewController
+        // Set the property to the selected location so when the view for
+        // detail view controller loads, it can access that property to get the feeditem obj
+        detailVC.selectedLocation = selectedLocation
+    }
+     */
     
     /*
     // MARK: - Navigation
