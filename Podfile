@@ -10,6 +10,7 @@ target 'IMCorrs' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
   pod 'MBProgressHUD', '~> 1.1.0'
   
 end
