@@ -51,7 +51,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIM-KR-Na3">
                                 <rect key="frame" x="313" y="244" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                <state key="normal" title="Button" image="icons8-screenshot-filled-50.png"/>
+                                <state key="normal" title="Button" image="icons-screenshot.png"/>
                                 <connections>
                                     <segue destination="OSe-7w-D9Y" kind="show" id="4Yx-hC-P52"/>
                                 </connections>
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4LC-j7-h1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="786"/>
+            <point key="canvasLocation" x="44" y="929"/>
         </scene>
         <!--Notificaciones-->
         <scene sceneID="qrf-99-p7c">
@@ -152,12 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yp-j0-sUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="903"/>
+            <point key="canvasLocation" x="1710" y="929"/>
         </scene>
         <!--Conferencia en curso-->
         <scene sceneID="bnq-uD-O4B">
             <objects>
-                <viewController id="12w-Fk-CqR" sceneMemberID="viewController">
+                <viewController id="12w-Fk-CqR" customClass="ConferenciaViewController" customModule="IMCorrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JWI-n4-mJr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,12 +225,21 @@
                     <tabBarItem key="tabBarItem" title="Conferencia" image="icon_conferencia_m.png" selectedImage="icon_conferencia_ma.png" id="9Zo-2z-T4x"/>
                     <navigationItem key="navigationItem" title="Conferencia en curso" id="kdZ-28-gAy">
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="JdF-DT-YZ0"/>
-                        <barButtonItem key="rightBarButtonItem" image="icons8-repeat-50.png" id="JQI-CD-el1"/>
+                        <barButtonItem key="rightBarButtonItem" image="icons8-repeat-50.png" id="JQI-CD-el1">
+                            <connections>
+                                <action selector="btnRefresh:" destination="12w-Fk-CqR" id="4uA-4I-ccz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblAutor" destination="xJI-ad-LEp" id="iJl-46-5u5"/>
+                        <outlet property="lblDescripcion" destination="iqf-eJ-qyg" id="KuN-9N-jX5"/>
+                        <outlet property="lblEmpresa" destination="pjH-7y-cQ9" id="0Wg-UK-fGQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oB-ez-FUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4172" y="840.62968515742136"/>
+            <point key="canvasLocation" x="4054" y="929"/>
         </scene>
         <!--Preguntas-->
         <scene sceneID="ceb-4A-eUn">
@@ -294,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kft-jQ-55I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4972" y="840.62968515742136"/>
+            <point key="canvasLocation" x="4948" y="929"/>
         </scene>
         <!--Programa-->
         <scene sceneID="FMh-oO-JdL">
@@ -481,7 +490,13 @@
                         <viewLayoutGuide key="safeArea" id="q2e-b9-Wtk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Conferencia" image="icon_mis_datos_m.png" selectedImage="icon_mis_datos_ma.png" id="Nco-Jy-akJ"/>
-                    <navigationItem key="navigationItem" title="Mis datos" id="07Y-V8-UC4"/>
+                    <navigationItem key="navigationItem" title="Mis datos" id="07Y-V8-UC4">
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="lkz-Sq-2u8">
+                            <connections>
+                                <action selector="botonSalir:" destination="Ei3-dk-6pU" id="91L-s2-Bde"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cargoParticipanteLabel" destination="yKb-X5-J6z" id="DYc-SJ-SQx"/>
@@ -568,7 +583,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI9-A2-ox4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3440.8000000000002" y="840.62968515742136"/>
+            <point key="canvasLocation" x="3230" y="929"/>
         </scene>
         <!--Mis datos-->
         <scene sceneID="hNJ-as-PQD">
@@ -664,7 +679,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IB9-GH-8ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.60000000000002" y="902.69865067466276"/>
+            <point key="canvasLocation" x="918" y="929"/>
         </scene>
     </scenes>
     <resources>
@@ -674,9 +689,9 @@
         <image name="icon_mis_datos_ma.png" width="20" height="20"/>
         <image name="icon_programa_m.png" width="17" height="21"/>
         <image name="icon_programa_ma.png" width="17" height="21"/>
+        <image name="icons-screenshot.png" width="50" height="50"/>
         <image name="icons8-notification-24.png" width="24" height="24"/>
         <image name="icons8-repeat-50.png" width="50" height="50"/>
-        <image name="icons8-screenshot-filled-50.png" width="50" height="50"/>
         <image name="logo_imcorrs.png" width="373" height="103"/>
     </resources>
 </document>

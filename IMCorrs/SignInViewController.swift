@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         spinningActivity.detailsLabel.text = "Espere por favor"
         
         //SEND HTTP POST
-        let myURL = URL(string: "http://expodiseno.com/imcorrs/iOS/services/login.php")!
+        let myURL = URL(string: "http://imcorrs.com/imcorrs-app/iOS/services/login.php")!
         let request = NSMutableURLRequest(url:myURL as URL)
         request.httpMethod = "POST"
         let postString = "folio=\(folioParticipante!)"

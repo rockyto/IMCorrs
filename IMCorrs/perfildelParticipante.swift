@@ -16,13 +16,13 @@ class perfildelParticipante: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var cargoParticipanteLabel: UILabel!
     @IBOutlet weak var imagenFolioParticipante: UIImageView!
     
-   // let URLIMCorrs = "http://192.168.1.70:8888/imcorrs/admin/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+        
     super.viewWillDisappear(animated)
     let participanteFolio = UserDefaults.standard.string(forKey: "folio")
     let participanteNombre = UserDefaults.standard.string(forKey: "nombre")

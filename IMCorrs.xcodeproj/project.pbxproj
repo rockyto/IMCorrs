@@ -35,9 +35,10 @@
 		AED635682152FC6200E8D50D /* nace_central.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635662152FC6100E8D50D /* nace_central.png */; };
 		AED635692152FC6200E8D50D /* logo_nace_internacional.png in Resources */ = {isa = PBXBuildFile; fileRef = AED635672152FC6100E8D50D /* logo_nace_internacional.png */; };
 		AED6356B2152FCD900E8D50D /* logo_penspen.png in Resources */ = {isa = PBXBuildFile; fileRef = AED6356A2152FCD900E8D50D /* logo_penspen.png */; };
+		F92AE38C21547BC200F55CEA /* icons-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F92AE38B21547BC000F55CEA /* icons-screenshot.png */; };
+		F92AE38E2154871E00F55CEA /* ConferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92AE38D2154871E00F55CEA /* ConferenciaViewController.swift */; };
 		F92D7B602137AFA900012A23 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D7B5F2137AFA900012A23 /* SignInViewController.swift */; };
 		F92FEA4E213F9A8500FC39CC /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */; };
-		F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */; };
 		F949DD1321521BBF000BB515 /* icons8-repeat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F949DD1221521BBE000BB515 /* icons8-repeat-50.png */; };
 /* End PBXBuildFile section */
 
@@ -99,9 +100,10 @@
 		AED635672152FC6100E8D50D /* logo_nace_internacional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_nace_internacional.png; sourceTree = "<group>"; };
 		AED6356A2152FCD900E8D50D /* logo_penspen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_penspen.png; sourceTree = "<group>"; };
 		BCD0A5C5B182D54C2644CB46 /* Pods_IMCorrsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92AE38B21547BC000F55CEA /* icons-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-screenshot.png"; sourceTree = "<group>"; };
+		F92AE38D2154871E00F55CEA /* ConferenciaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenciaViewController.swift; sourceTree = "<group>"; };
 		F92D7B5F2137AFA900012A23 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
-		F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-screenshot-filled-50.png"; sourceTree = "<group>"; };
 		F949DD1221521BBE000BB515 /* icons8-repeat-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-repeat-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 				AE0A08252151AE4E007D22DF /* ProgramaTableViewCell.swift */,
 				AE0A08352151B490007D22DF /* DetallesPrograma.swift */,
 				AE0A08332151B0DB007D22DF /* ProgramaViewController.swift */,
+				F92AE38D2154871E00F55CEA /* ConferenciaViewController.swift */,
 				AE0A08212151ADFA007D22DF /* ProgramaModelo.swift */,
 				AE44CA802131BFE10062BD7A /* AppDelegate.swift */,
 				AEAFAB762140643F00CDD49B /* enviarQRViewController.swift */,
@@ -218,12 +221,12 @@
 		AE72C21521373BCB005AD065 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
+				F92AE38B21547BC000F55CEA /* icons-screenshot.png */,
 				AE72C21E21373D0B005AD065 /* icon_conferencia_m@3x.png */,
 				F949DD1221521BBE000BB515 /* icons8-repeat-50.png */,
 				AE72C21D21373D06005AD065 /* icon_mis_datos_m@3x.png */,
 				AE3CD6DD21544F3C0045B007 /* icons8-notification-24.png */,
 				AE72C21C21373D03005AD065 /* icon_programa_m@3x.png */,
-				F949DD102151FF22000BB515 /* icons8-screenshot-filled-50.png */,
 				AE72C21821373BF7005AD065 /* icon_conferencia_ma@3x.png */,
 				AE72C21A21373C01005AD065 /* icon_mis_datos_ma@3x.png */,
 				AE72C21621373BDF005AD065 /* icon_programa_ma@3x.png */,
@@ -366,7 +369,7 @@
 				AE44CAAF2131C2360062BD7A /* GoogleService-Info.plist in Resources */,
 				AE44CA882131C0130062BD7A /* Assets.xcassets in Resources */,
 				AE44CA862131BFE10062BD7A /* Main.storyboard in Resources */,
-				F949DD112151FF23000BB515 /* icons8-screenshot-filled-50.png in Resources */,
+				F92AE38C21547BC200F55CEA /* icons-screenshot.png in Resources */,
 				AE72C21921373BFE005AD065 /* icon_conferencia_ma@3x.png in Resources */,
 				AE3CD6DE21544F3C0045B007 /* icons8-notification-24.png in Resources */,
 				AE72C22121373D0F005AD065 /* icon_conferencia_m@3x.png in Resources */,
@@ -451,6 +454,7 @@
 			files = (
 				AE0A08222151ADFA007D22DF /* ProgramaModelo.swift in Sources */,
 				AE0A08342151B0DB007D22DF /* ProgramaViewController.swift in Sources */,
+				F92AE38E2154871E00F55CEA /* ConferenciaViewController.swift in Sources */,
 				AE72C22621375419005AD065 /* MBProgressHUD.m in Sources */,
 				AEB2FF602141B4AF00FCA959 /* PreguntasViewController.swift in Sources */,
 				AE506D742138510900243EA1 /* perfildelParticipante.swift in Sources */,

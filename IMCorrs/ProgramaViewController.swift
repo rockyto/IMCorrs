@@ -20,11 +20,9 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         spinner.frame = CGRect(x: -20.0, y:6.0, width:20.0, height:20.0)
         spinner.startAnimating()
         spinner.alpha = 0.0
-        
         status.isHidden = true
         view.addSubview(status)
         status.addSubview(label)
