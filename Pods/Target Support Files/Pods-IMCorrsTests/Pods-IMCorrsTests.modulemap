@@ -1,6 +1,0 @@
-framework module Pods_IMCorrsTests {
-  umbrella header "Pods-IMCorrsTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
