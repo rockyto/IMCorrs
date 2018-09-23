@@ -62,6 +62,17 @@ class PreguntasViewController: UIViewController {
     
     
     @IBAction func enviarPregunta(_ sender: UIBarButtonItem){
+        //let Pregunta = campoPregunta.text
+        
+        
+        if (campoPregunta.text?.isEmpty)!{
+            let myAlert = UIAlertController(title: "Atención", message: "Favor de llenar el campo requerido",  preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
         let id = ref.childByAutoId().key
         let preguntas_val = ["estatus": estatusPregunta,
                         "mensaje": campoPregunta.text,
