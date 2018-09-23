@@ -39,7 +39,7 @@ class PreguntasViewController: UIViewController {
     }
     @IBAction func switchAnonimo(_ sender: UISwitch) {
         if(sender.isOn == true){
-            self.autorPregunta = "Áninimo"
+            self.autorPregunta = "Anónimo"
             print(autorPregunta)
         }else{
             self.autorPregunta = participanteNombre!

@@ -148,7 +148,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kDF-Oo-7ii"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Notificaciones" image="icons8-notification-24.png" selectedImage="icons8-notification-24.png" id="wEd-y6-nrk"/>
                     <navigationItem key="navigationItem" title="Notificaciones" id="ql6-Yw-6cM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yp-j0-sUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,7 +371,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hTb-BU-Fuw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mis datos" image="icon_programa_m.png" selectedImage="icon_programa_ma.png" id="SYg-Jr-atd"/>
+                    <tabBarItem key="tabBarItem" title="Programa" image="icon_programa_m.png" selectedImage="icon_programa_ma.png" id="SYg-Jr-atd"/>
                     <navigationItem key="navigationItem" title="Programa" id="jgQ-o6-cSL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -551,7 +553,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q2e-b9-Wtk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conferencia" image="icon_mis_datos_m.png" selectedImage="icon_mis_datos_ma.png" id="Nco-Jy-akJ"/>
+                    <tabBarItem key="tabBarItem" title="Mis datos" image="icon_mis_datos_m.png" selectedImage="icon_mis_datos_ma.png" id="Nco-Jy-akJ"/>
                     <navigationItem key="navigationItem" title="Mis datos" id="07Y-V8-UC4">
                         <barButtonItem key="rightBarButtonItem" title="Salir" id="lkz-Sq-2u8">
                             <connections>
@@ -584,8 +586,8 @@
                     <connections>
                         <segue destination="ZqH-9a-FIY" kind="relationship" relationship="viewControllers" id="7hu-2N-0dO"/>
                         <segue destination="LUG-TJ-QQf" kind="relationship" relationship="viewControllers" id="yWj-6B-Tfk"/>
-                        <segue destination="Tqr-Zl-DD5" kind="relationship" relationship="viewControllers" id="gzy-iO-2hv"/>
                         <segue destination="7Sm-r0-lMV" kind="relationship" relationship="viewControllers" id="zbe-MJ-auR"/>
+                        <segue destination="Tqr-Zl-DD5" kind="relationship" relationship="viewControllers" id="gzy-iO-2hv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFr-fT-8Uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
