@@ -72,9 +72,7 @@
 		AE3CD6DD21544F3C0045B007 /* icons8-notification-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-notification-24.png"; sourceTree = "<group>"; };
 		AE44CA7D2131BFE00062BD7A /* IMCorrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMCorrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44CA802131BFE10062BD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE44CA852131BFE10062BD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE44CA872131C0130062BD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE44CA8A2131C0130062BD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE44CA8C2131C0130062BD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE44CA912131C0150062BD7A /* IMCorrsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMCorrsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44CA952131C0150062BD7A /* IMCorrsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCorrsTests.swift; sourceTree = "<group>"; };
@@ -102,10 +100,14 @@
 		AED635672152FC6100E8D50D /* logo_nace_internacional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_nace_internacional.png; sourceTree = "<group>"; };
 		AED6356A2152FCD900E8D50D /* logo_penspen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_penspen.png; sourceTree = "<group>"; };
 		BCD0A5C5B182D54C2644CB46 /* Pods_IMCorrsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMCorrsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F916B2612158AD6F00903B2F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92AE38B21547BC000F55CEA /* icons-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-screenshot.png"; sourceTree = "<group>"; };
 		F92AE38D2154871E00F55CEA /* ConferenciaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenciaViewController.swift; sourceTree = "<group>"; };
 		F92D7B5F2137AFA900012A23 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F92FEA4D213F9A8500FC39CC /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		F932A7D321587F1700D681AD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		F932A7D421587F3500D681AD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		F932A7DA215881E100D681AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F949DD1221521BBE000BB515 /* icons8-repeat-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-repeat-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -508,7 +510,8 @@
 		AE44CA842131BFE10062BD7A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE44CA852131BFE10062BD7A /* Base */,
+				F932A7D321587F1700D681AD /* es-419 */,
+				F932A7DA215881E100D681AD /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -516,7 +519,8 @@
 		AE44CA892131C0130062BD7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE44CA8A2131C0130062BD7A /* Base */,
+				F932A7D421587F3500D681AD /* es-419 */,
+				F916B2612158AD6F00903B2F /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -528,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -588,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

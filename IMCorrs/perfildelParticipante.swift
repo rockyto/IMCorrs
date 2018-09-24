@@ -34,10 +34,7 @@ class perfildelParticipante: UIViewController, UIImagePickerControllerDelegate, 
     cargoParticipanteLabel.text = participanteCargo
     folioParticipanteLabel.text = participanteFolio
     
-    
-        
-    //let FolioQR = participanteFolio.data(using: .ascii, allowLossyConversion: false)
-    
+
     let datoFolio = participanteFolio?.data(using: .ascii, allowLossyConversion: false)
     
     let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -58,10 +55,8 @@ class perfildelParticipante: UIViewController, UIImagePickerControllerDelegate, 
     
     let signInPage = (self.storyboard?.instantiateViewController(withIdentifier: "signInViewController") as? UINavigationController)
     
- 
     let appDelegado = UIApplication.shared.delegate
         appDelegado?.window??.rootViewController = signInPage
-        
         
     }
 
