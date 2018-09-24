@@ -11,13 +11,23 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var folioTextField: UITextField!
+    
+    @IBOutlet var lblIdioma: UILabel!
+    
     @IBOutlet weak var acceso: UIButton!
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     let status = UIImageView(image: UIImage(named: "banner"))
     let label = UILabel()
     
+    var TituloProgress = ""
+    var subProgress = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
         NavBarImage()
         
 //        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -77,7 +87,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if (folioParticipante?.isEmpty)! {
             
-            let myAlert = UIAlertController(title: "Atención", message: "Favor de llenar campo requerido", preferredStyle: UIAlertControllerStyle.alert)
+            
+            if (lblIdioma.text == "Español"){
+                TituloProgress = "Atención"
+                subProgress = "Favor de llenar campo requerido"
+            }else if (lblIdioma.text == "English"){
+                TituloProgress = "Atention"
+                subProgress = "Please fill the field"
+            }
+            
+            let myAlert = UIAlertController(title: "\(TituloProgress)", message: "\(subProgress)", preferredStyle: UIAlertControllerStyle.alert)
             
             let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
             
@@ -85,9 +104,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.present(myAlert, animated: true, completion: nil)
             return
         }
+        if (lblIdioma.text == "Español"){
+            TituloProgress = "Verificando"
+            subProgress = "Espere por favor"
+        }else if (lblIdioma.text == "English"){
+            TituloProgress = "Verifying"
+            subProgress = "Wait please"
+        }
         let spinningActivity = MBProgressHUD.showAdded(to: self.view, animated: true)
-        spinningActivity.label.text = "Verificando"
-        spinningActivity.detailsLabel.text = "Espere por favor"
+        spinningActivity.label.text = "\(TituloProgress)"
+        spinningActivity.detailsLabel.text = "\(subProgress)"
         
         //SEND HTTP POST
         let myURL = URL(string: "http://imcorrs.com/imcorrs-app/iOS/services/login.php")!

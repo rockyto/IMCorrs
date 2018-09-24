@@ -12,7 +12,7 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
     var feedItems: NSArray = NSArray()
     var selectTema : DetallePrograma = DetallePrograma()
     @IBOutlet weak var listTableView: UITableView!
-    
+    @IBOutlet var lblIdioma: UILabel!
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     let status = UIImageView(image: UIImage(named: "banner"))
     let label = UILabel()
@@ -75,19 +75,64 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProgramaTableViewCell
         let item: DetallePrograma = feedItems[indexPath.row] as! DetallePrograma
         
-        if (item.autores != nil){
-            cell.selectionStyle = .default
-            cell.lblHorario!.text = item.horario
-            cell.lblDescripcion!.text = item.descripcion
-            cell.lblAutores!.text = item.autores
-        }else{
-            cell.selectionStyle = .none
+        if (lblIdioma.text == "Español"){
+            if (item.autores != nil){
+                
+                cell.lblHorario!.text = item.horario
+                cell.lblDescripcion!.text = item.descripcion
+                cell.lblAutores!.text = item.autores
             
-            cell.isUserInteractionEnabled = false
-            cell.lblHorario!.text = item.horario
-            cell.lblDescripcion!.text = item.descripcion
-            cell.lblAutores!.text = item.autores
+            }else if (item.autores == nil){
+                
+              
+                cell.isUserInteractionEnabled = false
+                cell.lblHorario!.text = item.horario
+                cell.lblDescripcion!.text = item.descripcion
+                cell.lblAutores!.text = item.autores
+            
+            }
+        }else if (lblIdioma.text == "English"){
+            if (item.autores != nil){
+                
+                cell.lblHorario!.text = item.horario
+                cell.lblDescripcion!.text = item.descrpcion_ingles
+                cell.lblAutores!.text = item.autores
+                
+            }else if (item.autores == nil){
+                
+             
+                cell.isUserInteractionEnabled = false
+                cell.lblHorario!.text = item.horario
+                cell.lblDescripcion!.text = item.descrpcion_ingles
+                cell.lblAutores!.text = item.autores
+                
+            }
         }
+        
+        /*
+        if (lblIdioma.text == "Español"){
+            TituloProgress = "Verificando"
+            subProgress = "Espere por favor"
+        }else if (lblIdioma.text == "English"){
+            TituloProgress = "Verifying"
+            subProgress = "Wait please"
+        }
+        */
+        
+        
+//        if (item.autores != nil){
+//            cell.selectionStyle = .default
+//            cell.lblHorario!.text = item.horario
+//            cell.lblDescripcion!.text = item.descripcion
+//            cell.lblAutores!.text = item.autores
+//        }else{
+//            cell.selectionStyle = .none
+//
+//            cell.isUserInteractionEnabled = false
+//            cell.lblHorario!.text = item.horario
+//            cell.lblDescripcion!.text = item.descripcion
+//            cell.lblAutores!.text = item.autores
+//        }
         
         return cell
     }
@@ -98,56 +143,22 @@ class ProgramaViewController: UIViewController, UITableViewDataSource, UITableVi
         let detail:programaDetallesViewController = self.storyboard?.instantiateViewController(withIdentifier: "detallesPrograma") as! programaDetallesViewController
         let item: DetallePrograma = feedItems[indexPath.row] as! DetallePrograma
        
-        /*
-        detail.selectDescrp = item.descripcion!
-        detail.selectAutor = item.autores!
-        detail.selectHorario = item.horario!
-         
-         
-         detail.strregion = "Region :\(arrdata[indexPath.row].region)"
-         detail.strsubregion = "SubRegion :\(arrdata[indexPath.row].subregion)"
-         detail.stralpha3 = "Alpha3code :\(arrdata[indexPath.row].alpha3Code)"
-         detail.stralpha2 = "Alpha2code :\(arrdata[indexPath.row].alpha2Code)"
-         self.navigationController?.pushViewController(detail, animated: true)
-         
-         detail.lblHorarioSelect!.text = item.horario
-         detail.lblAutorSelect!.text = item.autores
-         detail.lblDescrpSelect!.text = item.descripcion
-         
-         
-         if (item.autores != nil){
-         cell.selectionStyle = .default
-         cell.lblHorario!.text = item.horario
-         cell.lblDescripcion!.text = item.descripcion
-         cell.lblAutores!.text = item.autores
-         }else{
-         cell.selectionStyle = .none
-         cell.lblHorario!.text = item.horario
-         cell.lblDescripcion!.text = item.descripcion
-         cell.lblAutores!.text = item.autores
-         }
-         
-         if (item.autores != nil){
-         cell.selectionStyle = .default
-         
-         detail.selectHorario = item.horario!
-         detail.selectDescrp = item.descripcion!
-         detail.selectAutor = item.autores!
-         self.navigationController?.pushViewController(detail, animated: true)
-         }else{
-         //detail.select(nil)
-         cell.selectionStyle = .none
-         cell.isUserInteractionEnabled = false
-         }
-         
-        */
         
-      
-      
+        
+        
+        if (lblIdioma.text == "Español"){
             detail.selectHorario = item.horario!
             detail.selectDescrp = item.descripcion!
             detail.selectAutor = item.autores!
             self.navigationController?.pushViewController(detail, animated: true)
+        }else if (lblIdioma.text == "English"){
+            detail.selectHorario = item.horario!
+            detail.selectDescrp = item.descrpcion_ingles!
+            detail.selectAutor = item.autores!
+            self.navigationController?.pushViewController(detail, animated: true)
+        }
+      
+        
 
         
       
